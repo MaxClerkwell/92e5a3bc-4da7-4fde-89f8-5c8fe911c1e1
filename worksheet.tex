@@ -1,6 +1,6 @@
 \documentclass{dcbl/challenge}
 
-\setdoctitle{Der Titel meines Dokuments}
+\setdoctitle{Combinational Logic Circuits}
 \setdocauthor{Stephan Bökelmann}
 \setdocemail{sboekelmann@ep1.rub.de}
 \setdocinstitute{AG Physik der Hadronen und Kerne}
@@ -8,20 +8,41 @@
 
 \begin{document}
 
-Jedes Challenge-Blatt beginnt mit einer kurzen Einleitung, die einen Kontext für den jeweiligen Zettel setzt. 
+Boolean logic helps us abstracting logic circuits.
+Using the combination of several of these elements, we can build more sophisticated circuits and mappings.
+A mapping is a function that maps one set of values to another set of values.
+An addition for example is a mapping between two sets of values onto a third set of values, where the third set consists of all possible sums of two values from the first two sets.
+Using combinational logic circuits, we can build these mappings.
 
-\section*{Aufgaben}
+
+\section*{Exercises}
 \begin{aufgabe}
-    Löse die Gleichung $x^2 - 5x + 6 = 0$.
+    In the November of 1937, Georg Stibitz created the first digital adder, using relais, switches and lamps. Take a look at this simulation of a 1-bit adder: \url{https://circuitverse.org/simulator/embed/1-bit-adder-62af8084-2923-41a2-bb79-b3151d12d088}. 
+    Write down the boolean equation for this circuit. 
 \end{aufgabe}
 
-\begin{aufgabe}[Für Fortgeschrittene]
-    Beweise den Satz des Pythagoras.
+\begin{aufgabe}
+    Using this idea of a 1-bit adder, write down the boolean equation for the following circuits:
+    \begin{enumerate}
+        \item 2-bit adder
+        \item 4-bit adder
+        \item 1-bit subtractor
+        \item 2-bit multiplier
+    \end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}
+    Implement a 2-bit adder using only combinational logic and the Circuit-Verse simulator. \url{https://circuitverse.org/}.
+\end{aufgabe}
+
+\begin{aufgabe}
+    Write down an elaborate argument, about which mappings can, and which mappings can not be build with this kind of combinational logic.
 \end{aufgabe}
 
 \section*{Anmerkungen}
 \begin{enumerate}
-    \item Link zu einem YouTube-Video: \url{https://www.youtube.com}
+    \item Georg Stibitz on the computer history museum: \url{https://www.computerhistory.org/revolution/birth-of-the-computer/4/85}
+    \item Electronic Tutorials on combinational logic: \url{https://www.electronics-tutorials.ws/combination/comb_1.html}
 \end{enumerate}
 
 \end{document}
